@@ -1,0 +1,99 @@
+.home {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .banner {
+        background: url("../../public/banner-barbearia.jpg") center no-repeat;
+        background-size: cover;
+
+        width: 100%;
+        height: 50%;
+    }
+
+    .limited-width {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        padding: 40px 0;
+
+        p, h1 {
+            text-align: center;
+        }
+
+        .destaque {
+            font-weight: bold;
+        }
+
+        .autografo {
+            font-family: 'great Vibes', cursive;
+            font-size: 100px;
+            color: #B2987D;
+        }
+    }
+}
+
+.darkMode {
+    background-color: #252323;
+
+    h1, p {
+        color: #fff;
+    }
+}
+
+@media (max-width: 375px) {
+    .home {
+        .banner {
+            height: 40%;
+        }
+
+        .limited-width {
+            gap: 20px;
+            padding: 20px 0;
+
+            .autografo {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+/* Para telas de até 768px */
+@media (max-width: 768px) {
+    .home {
+        .banner {
+            height: 45%;
+        }
+
+        .limited-width {
+            gap: 30px;
+            padding: 30px 0;
+
+            .autografo {
+                font-size: 70px;
+            }
+        }
+    }
+}
+
+/* Para telas de até 1024px */
+@media (max-width: 1024px) {
+    .home {
+        .banner {
+            height: 50%;
+        }
+
+        .limited-width {
+            gap: 40px;
+            padding: 40px 0;
+
+            .autografo {
+                font-size: 80px;
+            }
+        }
+    }
+}
